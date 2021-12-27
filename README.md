@@ -27,7 +27,13 @@ The third and final area pivots towards leadership and management skills. This i
 
 > CS229 provides a broad introduction to statistical machine learning (at an intermediate / advanced level) and covers supervised learning (generative/discriminative learning, parametric/non-parametric learning, neural networks, support vector machines); unsupervised learning (clustering, dimensionality reduction, kernel methods); learning theory (bias/variance tradeoffs, practical ); and reinforcement learning among other topics. The structure of the summer offering enables coverage of additional topics, places stronger emphasis on the mathematical and visual intuitions, and goes deeper into the details of various topics.
 
-### [Random Forests and Gradient Boosting](https://www.youtube.com/watch?v=q90UDEgYqeI)
+### Random Forests and Gradient Boosting
+*TODO: More in depth reading will be needed to be added here. Papers on random forests will should be added.*
+
+- [Decision Trees](https://www.youtube.com/watch?v=q90UDEgYqeI)
+- [Random Forests](https://www.youtube.com/playlist?list=PLblh5JKOoLUIE96dI3U7oxHaCAbZgfhHk)
+- [Gradient Boost](https://www.youtube.com/playlist?list=PLblh5JKOoLUJjeXUvUE0maghNuY2_5fY6)
+- [XGBoost](https://www.youtube.com/watch?v=GrJP9FLV3FE)
 
 ### [CS230: Deep Learning (Stanford)](https://cs230.stanford.edu/)
 
