@@ -41,3 +41,32 @@ The third and final area pivots towards leadership and management skills. This i
 
 Important links:
 - [Hidden files that include exam papers](https://cs230.stanford.edu/files/)
+
+### Deeper Studying
+*TODO: [here is a very good thread of many advanced courses](https://www.reddit.com/r/MachineLearning/comments/fdw0ax/d_advanced_courses_update), I need to decide what to pick and choose from these, if needed.*
+
+### Techincal Skills
+
+This section is under construction and will need more thought. Here are some broad things that will need to be researched:
+- Docker
+- Terraform (maybe?)
+- A course on MLOps
+- A course on Scala/Spark
+- An intermediate course on Tensorflow/PyTorch
+- A course on the generals of Azure -- possibly a project that incorperates any models produced from the foundational recap and the course on Tensorflow/PyTorch
+- Reading the following books:
+  - Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides
+  - Principles of Package Design: Creating Reusable Software Components by Matthias Noback
+  - Clean Code: A Handbook of Agile Software Craftsmanship by Robert Martin
+- Watching the following (Python) videos:
+  - [Cohesion and coupling](https://youtu.be/eiDyK_ofPPM)
+  - [Dependency inversion](https://youtu.be/Kv5jhbSkqLE)
+  - [The strategy pattern](https://youtu.be/WQ8bNdxREHU)
+  - [The observer pattern](https://youtu.be/oNalXg67XEE)
+  - [Unit testing and code coverage](https://youtu.be/jmP3fp_BhmE)
+  - [Template method and bridge](https://youtu.be/t0mCrXHsLbI)
+  - [Exception handling](https://youtu.be/ZsvftkbbrR0)
+  - [Monadic error handling](https://youtu.be/J-HWmoTKhC8)
+  - [Software architecture](https://youtu.be/ihtIcGkTFBU)
+  - [SOLID principles](https://youtu.be/pTB30aXS77U)
+  - [Object creation patterns](https://youtu.be/Rm4JP7JfsKY)
