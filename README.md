@@ -70,3 +70,7 @@ This section is under construction and will need more thought. Here are some bro
   - [Software architecture](https://youtu.be/ihtIcGkTFBU)
   - [SOLID principles](https://youtu.be/pTB30aXS77U)
   - [Object creation patterns](https://youtu.be/Rm4JP7JfsKY)
+
+### Management and Leadership
+
+*TODO: Pick and select key areas to select from [this **excellent** repo](https://github.com/LappleApple/awesome-leading-and-managing).*
