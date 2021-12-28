@@ -54,6 +54,7 @@ This section is under construction and will need more thought. Here are some bro
 - A course on Scala/Spark
 - An intermediate course on Tensorflow/PyTorch
 - A course on the generals of Azure -- possibly a project that incorperates any models produced from the foundational recap and the course on Tensorflow/PyTorch
+- Unit testing
 - Reading the following books:
   - Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides
   - Principles of Package Design: Creating Reusable Software Components by Matthias Noback
