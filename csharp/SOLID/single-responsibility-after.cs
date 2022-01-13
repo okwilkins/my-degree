@@ -1,6 +1,6 @@
 // This file is derived from: https://github.com/ArjanCodes/betterpython/blob/main/9%20-%20solid/single-responsibility-before.py
 
-namespace SingleResponsibility {
+namespace SingleResponsibilityAfter {
     public class Order {
         public List<string> Items { get; set; }
         public List<int> Quantities { get; set; }
