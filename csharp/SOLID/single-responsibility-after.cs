@@ -46,7 +46,7 @@ namespace SingleResponsibilityAfter {
     }
 
     public class Program {
-        static void Main(string[] args) {
+        public void Main() {
             Order order = new Order();
             order.AddItem("Keyboard", 1, 50);
             order.AddItem("SSD", 1, 150);
