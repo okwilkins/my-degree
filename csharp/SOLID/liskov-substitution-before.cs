@@ -51,6 +51,14 @@ namespace LiskovSubstitutionBefore {
         }
     }
 
+    public class PaypalPaymentProcessor : IPaymentProcessor {
+        public void Pay(Order order, string securityCode) {
+            Console.WriteLine("Processing credit payment type");
+            Console.WriteLine($"Verifying email address: {securityCode}");
+            order.Status = "paid";
+        }
+    }
+
     public class Program {
         public void Main() {
             Order order = new Order();
@@ -59,7 +67,7 @@ namespace LiskovSubstitutionBefore {
             order.AddItem("USB cable", 2, 5);
 
             Console.WriteLine(order.TotalPrice());
-            IPaymentProcessor processor = new DebitPaymentProcessor();
+            IPaymentProcessor processor = new PaypalPaymentProcessor();
             processor.Pay(order, "okwilkins@gmail.com");
         }
     }
