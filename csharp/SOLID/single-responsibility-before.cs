@@ -48,10 +48,12 @@ namespace SingleResponsibility {
     public class Program {
         static void Main(string[] args) {
             Order order = new Order();
-            order.AddItem("test", 2, 12.3);
+            order.AddItem("Keyboard", 1, 50);
+            order.AddItem("SSD", 1, 150);
+            order.AddItem("USB cable", 2, 5);
 
-            order.Items.ForEach(i => Console.WriteLine(i));
             Console.WriteLine(order.TotalPrice());
+            PaymentProcessor.PayDebit(order, "0372846");
         }
     }
 }
