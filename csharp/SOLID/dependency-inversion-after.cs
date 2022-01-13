@@ -153,7 +153,8 @@ namespace DependencyInversionAfter {
             order.AddItem("USB cable", 2, 5);
 
             Console.WriteLine(order.TotalPrice());
-            AuthorizerRobot authorizer =  new AuthorizerRobot();
+            AuthorizerRobot authorizer = new AuthorizerRobot();
+            authorizer.NotARobot();
             IPaymentProcessor processor = new DebitPaymentProcessor("2349875", authorizer);
             processor.Pay(order);
         }
