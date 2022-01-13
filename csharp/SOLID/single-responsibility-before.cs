@@ -47,17 +47,17 @@ namespace SingleResponsibilityBefore {
                 throw new Exception($"Unknown payment type: {paymentType}");
             }
         }
+    }
 
-        public class Program {
-            public static void Main() {
-                Order order = new Order();
-                order.AddItem("Keyboard", 1, 50);
-                order.AddItem("SSD", 1, 150);
-                order.AddItem("USB cable", 2, 5);
+    public class Program {
+        public static void Main() {
+            Order order = new Order();
+            order.AddItem("Keyboard", 1, 50);
+            order.AddItem("SSD", 1, 150);
+            order.AddItem("USB cable", 2, 5);
 
-                Console.WriteLine(order.TotalPrice());
-                order.Pay("debit", "03722846");
-            }
+            Console.WriteLine(order.TotalPrice());
+            order.Pay("debit", "03722846");
         }
     }
 }
