@@ -75,7 +75,7 @@ namespace LiskovSubstitutionAfter {
     }
 
     public class Program {
-        public void Main() {
+        public static void Main() {
             Order order = new Order();
             order.AddItem("Keyboard", 1, 50);
             order.AddItem("SSD", 1, 150);
