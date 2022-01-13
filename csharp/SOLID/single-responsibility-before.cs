@@ -30,7 +30,20 @@ namespace SingleResponsibility {
             return total;
         }
     }
-    
+
+    public class PaymentProcessor {
+        public static void PayDebit(Order order, string securityCode) {
+            Console.WriteLine("Processing debit payment type");
+            Console.WriteLine($"Verifying security code: {securityCode}");
+            order.Status = "paid";
+        }
+
+        public static void PayCredit(Order order, string securityCode) {
+            Console.WriteLine("Processing credit payment type");
+            Console.WriteLine($"Verifying security code: {securityCode}");
+            order.Status = "paid";
+        }
+    }
 
     public class Program {
         static void Main(string[] args) {
@@ -38,6 +51,7 @@ namespace SingleResponsibility {
             order.AddItem("test", 2, 12.3);
 
             order.Items.ForEach(i => Console.WriteLine(i));
+            Console.WriteLine(order.TotalPrice());
         }
     }
 }
