@@ -53,7 +53,7 @@ namespace LiskovSubstitutionBefore {
 
     public class PaypalPaymentProcessor : IPaymentProcessor {
         public void Pay(Order order, string securityCode) {
-            Console.WriteLine("Processing credit payment type");
+            Console.WriteLine("Processing paypal payment type");
             Console.WriteLine($"Verifying email address: {securityCode}");
             order.Status = "paid";
         }
