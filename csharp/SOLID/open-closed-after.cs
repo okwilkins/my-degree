@@ -31,14 +31,20 @@ namespace OpenClosedAfter {
         }
     }
 
-    public class PaymentProcessor {
-        public static void PayDebit(Order order, string securityCode) {
+    public interface IPaymentProcessor {
+        public void Pay(Order order, string securityCode);
+    }
+
+    public class DebitPaymentProcessor : IPaymentProcessor {
+        public void Pay(Order order, string securityCode) {
             Console.WriteLine("Processing debit payment type");
             Console.WriteLine($"Verifying security code: {securityCode}");
             order.Status = "paid";
         }
+    }
 
-        public static void PayCredit(Order order, string securityCode) {
+    public class CreditPaymentProcessor : IPaymentProcessor {
+        public void Pay(Order order, string securityCode) {
             Console.WriteLine("Processing credit payment type");
             Console.WriteLine($"Verifying security code: {securityCode}");
             order.Status = "paid";
@@ -53,7 +59,8 @@ namespace OpenClosedAfter {
             order.AddItem("USB cable", 2, 5);
 
             Console.WriteLine(order.TotalPrice());
-            PaymentProcessor.PayDebit(order, "0372846");
+            IPaymentProcessor processor = new DebitPaymentProcessor();
+            processor.Pay(order, "037286");
         }
     }
 }
