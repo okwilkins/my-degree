@@ -3,22 +3,41 @@
 namespace SingleResponsibility {
     public class Order {
         public List<string> Items { get; set; }
-        public List<string> Quantities { get; set; }
-        public List<string> Prices { get; set; }
+        public List<int> Quantities { get; set; }
+        public List<double> Prices { get; set; }
         public string Status { get; set; }
 
         public Order() {
-            List<string> Items = new List<string>();
-            List<string> Quantities = new List<string>();
-            List<string> Prices = new List<string>();
-            string Status = "open";
+            this.Items = new List<string>();
+            this.Quantities = new List<int>();
+            this.Prices = new List<double>();
+            this.Status = "open";
         }
 
+        public void AddItem(string name, int quantity, double price) {
+            this.Items.Add(name);
+            this.Quantities.Add(quantity);
+            this.Prices.Add(price);
+        }
+
+        public double TotalPrice() {
+            double total = 0;
+
+            for (int i = 0; i < this.Prices.Count; i++) {
+                total += this.Quantities[i] * this.Prices[i];
+            }
+
+            return total;
+        }
     }
+    
 
     public class Program {
         static void Main(string[] args) {
-            Console.WriteLine("Program is running!");
+            Order order = new Order();
+            order.AddItem("test", 2, 12.3);
+
+            order.Items.ForEach(i => Console.WriteLine(i));
         }
     }
 }
